@@ -7,77 +7,87 @@ function rollDice(sides){
 function DFour(props){
   const [roll, setRoll] = useState(null);
   return(
-    <>
-      <button onClick={() => setRoll(rollDice(4))}>d4</button>
-      {roll}
-    </>
+    <div class='diceItem'>
+      <button onClick={() => setRoll(rollDice(4))}>4</button>
+      <div class='roll'>{roll}</div>
+    </div>
   )
 }
 function DSix(props){
   const [roll, setRoll] = useState(null);
   return(
-    <>
-      <button onClick={() => setRoll(rollDice(6))}>d6</button>
-      {roll}
-    </>
+    <div class='diceItem'>
+      <button onClick={() => setRoll(rollDice(6))}>6</button>
+      <div class='roll'>{roll}</div>
+    </div>
   )
 }
 function DEight(props){
   const [roll, setRoll] = useState(null);
   return(
-    <>
-      <button onClick={() => setRoll(rollDice(8))}>d8</button>
-      {roll}
-    </>
+    <div class='diceItem'>
+      <button onClick={() => setRoll(rollDice(8))}>8</button>
+      <div class='roll'>{roll}</div>
+    </div>
   )
 }
 function DTen(props){
   const [roll, setRoll] = useState(null);
   return(
-    <>
-      <button onClick={() => setRoll(rollDice(10))}>d10</button>
-      {roll}
-    </>
+    <div class='diceItem'>
+      <button onClick={() => setRoll(rollDice(10))}>10</button>
+      <div class='roll'>{roll}</div>
+    </div>
   )
 }
 function DTwelve(props){
   const [roll, setRoll] = useState(null);
   return(
-    <>
-      <button onClick={() => setRoll(rollDice(12))}>d12</button>
-      {roll}
-    </>
+    <div class='diceItem'>
+      <button onClick={() => setRoll(rollDice(12))}>12</button>
+      <div class='roll'>{roll}</div>
+    </div>
   )
 }
 function DTwenty(props){
   const [roll, setRoll] = useState(null);
   return(
-    <>
-      <button onClick={() => setRoll(rollDice(20))}>d20</button>
-      {roll}
-    </>
+    <div class='diceItem'>
+      <button id='dTwenty' onClick={() => setRoll(rollDice(20))}>20</button>
+      <div class='roll'>{roll}</div>
+    </div>
   )
 }
 function DOneHundred(props){
   const [roll, setRoll] = useState(null);
   return(
-    <>
-      <button onClick={() => setRoll(rollDice(100))}>d100</button>
-      {roll}
-    </>
+    <div class='diceItem'>
+      <button onClick={() => setRoll(rollDice(100))}>100</button>
+      <div class='roll'>{roll}</div>
+    </div>
+  )
+}
+function Totals(props){
+  return(
+    <div id='totals'>
+      display
+    </div>
   )
 }
 function App(){
   return(
-    <div id='diceWrapper'>
-      <DTwenty />
-      <DTwelve />
-      <DTen />
-      <DEight />
-      <DSix />
-      <DFour />
-      <DOneHundred />
-    </div>
+    <>
+      <Totals />
+      <div id='diceWrapper'>
+        <DTwenty />
+        <DTwelve />
+        <DTen />
+        <DEight />
+        <DSix />
+        <DFour />
+        <DOneHundred />
+      </div>
+    </>
   )
 }
 

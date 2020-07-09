@@ -1,4 +1,37 @@
+#totals{
+  height: 10vh;
+  font-family: 'Cinzel', serif;
+}
 #diceWrapper{
   display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+}
+.diceItem{
+  position: relative;
+  width: 33vw;
+  height: 28.35vh;
+  outline: 1px solid red;
+}
+.roll{
+  text-align: center;
+  font-size: 3rem;
+  margin-top: 1vh;
+  font-family: 'Cinzel', serif;
+}
+button{
+  width: 25vw;
+  height: 15vh;
+  font-family: 'Lato', sans-serif;
+  font-size: 4rem;
+  position: absolute;
+    top: 10vh;
+    left: 4vw;
+
+}
+#dTwenty{
+  border-top: 50px solid transparent;
+  border-left: 25px solid transparent;
+  border-bottom: 10px solid black;
 }
