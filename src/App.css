@@ -3,6 +3,7 @@
   font-family: 'Cinzel', serif;
 }
 #diceWrapper{
+  height: 85vh;
   display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -16,7 +17,7 @@
 }
 .roll{
   text-align: center;
-  font-size: 3rem;
+  font-size: 2rem;
   margin-top: 1vh;
   font-family: 'Cinzel', serif;
 }
@@ -24,14 +25,32 @@ button{
   width: 25vw;
   height: 15vh;
   font-family: 'Lato', sans-serif;
-  font-size: 4rem;
+  font-size: 3rem;
+  background-color: transparent;
+  border: none;
   position: absolute;
     top: 10vh;
     left: 4vw;
-
 }
-#dTwenty{
-  border-top: 50px solid transparent;
-  border-left: 25px solid transparent;
-  border-bottom: 10px solid black;
+.hexagon{
+  position: absolute;
+    top: 3.5vh;
+    left: 3vw;
+  font-size: 6.5em;
+  color: rgba(255, 0, 0, .5);
+}
+.triangle{
+  position: absolute;
+    top: 1vh;
+    left: -4vw;
+  font-size: 8.5em;
+  color: rgba(255, 0, 0, .5);
+}
+#dSix{
+  background-color: rgba(255, 0, 0, .5);
+}
+#dOneHundred{
+  font-size: 3rem;
+  position: absolute;
+    left: 1vw;
 }

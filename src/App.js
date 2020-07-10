@@ -8,6 +8,7 @@ function DFour(props){
   const [roll, setRoll] = useState(null);
   return(
     <div class='diceItem'>
+      <span className='triangle'>&#9650;</span>
       <button onClick={() => setRoll(rollDice(4))}>4</button>
       <div class='roll'>{roll}</div>
     </div>
@@ -17,7 +18,7 @@ function DSix(props){
   const [roll, setRoll] = useState(null);
   return(
     <div class='diceItem'>
-      <button onClick={() => setRoll(rollDice(6))}>6</button>
+      <button id='dSix' onClick={() => setRoll(rollDice(6))}>6</button>
       <div class='roll'>{roll}</div>
     </div>
   )
@@ -53,6 +54,7 @@ function DTwenty(props){
   const [roll, setRoll] = useState(null);
   return(
     <div class='diceItem'>
+      <span className='hexagon'>&#x2B22;</span>
       <button id='dTwenty' onClick={() => setRoll(rollDice(20))}>20</button>
       <div class='roll'>{roll}</div>
     </div>
@@ -62,7 +64,7 @@ function DOneHundred(props){
   const [roll, setRoll] = useState(null);
   return(
     <div class='diceItem'>
-      <button onClick={() => setRoll(rollDice(100))}>100</button>
+      <button id="dOneHundred" onClick={() => setRoll(rollDice(100))}>100</button>
       <div class='roll'>{roll}</div>
     </div>
   )
