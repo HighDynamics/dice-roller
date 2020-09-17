@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/dice_roller/static/css/main.ce106bb2.chunk.css",
+    "main.js": "/dice_roller/static/js/main.66cfa741.chunk.js",
+    "main.js.map": "/dice_roller/static/js/main.66cfa741.chunk.js.map",
+    "runtime-main.js": "/dice_roller/static/js/runtime-main.9335511d.js",
+    "runtime-main.js.map": "/dice_roller/static/js/runtime-main.9335511d.js.map",
+    "static/js/2.de7b1510.chunk.js": "/dice_roller/static/js/2.de7b1510.chunk.js",
+    "static/js/2.de7b1510.chunk.js.map": "/dice_roller/static/js/2.de7b1510.chunk.js.map",
+    "index.html": "/dice_roller/index.html",
+    "precache-manifest.3a7be9cfc68b9da72e6e0118a4fd938d.js": "/dice_roller/precache-manifest.3a7be9cfc68b9da72e6e0118a4fd938d.js",
+    "service-worker.js": "/dice_roller/service-worker.js",
+    "static/css/main.ce106bb2.chunk.css.map": "/dice_roller/static/css/main.ce106bb2.chunk.css.map",
+    "static/js/2.de7b1510.chunk.js.LICENSE.txt": "/dice_roller/static/js/2.de7b1510.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.9335511d.js",
+    "static/js/2.de7b1510.chunk.js",
+    "static/css/main.ce106bb2.chunk.css",
+    "static/js/main.66cfa741.chunk.js"
+  ]
+}
