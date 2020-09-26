@@ -1,86 +1,132 @@
-import React, { useState } from 'react';
-import './App.css';
+import React, { useState } from "react";
+import "./App.css";
 
-function rollDice(sides){
-  return Math.floor(Math.random() * Math.floor(sides)) + 1
+function rollDice(sides) {
+  return Math.floor(Math.random() * Math.floor(sides)) + 1;
 }
-function DFour(props){
+function DFour(props) {
   const [roll, setRoll] = useState(null);
-  return(
-    <div class='diceItem'>
-      <span className='triangle'>&#9650;</span>
-      <button onClick={() => setRoll(rollDice(4))}>4</button>
-      <div class='roll'>{roll}</div>
+  return (
+    <div class="diceItem">
+      <div class="roll">{roll}</div>
+      <div className="shapeContainer">
+        <div className="triangle"></div>
+        <button
+          className="triangleContent"
+          onClick={() => setRoll(rollDice(4))}
+        >
+          4
+        </button>
+      </div>
     </div>
-  )
+  );
 }
-function DSix(props){
+function DSix(props) {
   const [roll, setRoll] = useState(null);
-  return(
-    <div class='diceItem'>
-      <button id='dSix' onClick={() => setRoll(rollDice(6))}>6</button>
-      <div class='roll'>{roll}</div>
+  return (
+    <div className="diceItem">
+      <div className="roll">{roll}</div>
+      <div className="shapeContainer">
+        <div className="square"></div>
+        <button className="squareContent" onClick={() => setRoll(rollDice(6))}>
+          6
+        </button>
+      </div>
     </div>
-  )
+  );
 }
-function DEight(props){
+function DEight(props) {
   const [roll, setRoll] = useState(null);
-  return(
-    <div class='diceItem'>
-      <button onClick={() => setRoll(rollDice(8))}>8</button>
-      <div class='roll'>{roll}</div>
+  return (
+    <div className="diceItem">
+      <div className="roll">{roll}</div>
+      <div className="shapeContainer">
+        <div className="rhomTriTopContainer">
+          <div className="rhomTriTop"></div>
+        </div>
+        <div className="rhomTriBottomContainer">
+          <div className="rhomTriBottom"></div>
+        </div>
+        <button className="rhombusContent" onClick={() => setRoll(rollDice(8))}>
+          8
+        </button>
+      </div>
     </div>
-  )
+  );
 }
-function DTen(props){
+function DTen(props) {
   const [roll, setRoll] = useState(null);
-  return(
-    <div class='diceItem'>
-      <button onClick={() => setRoll(rollDice(10))}>10</button>
-      <div class='roll'>{roll}</div>
+  return (
+    <div class="diceItem">
+      <div class="roll">{roll}</div>
+      <div className="shapeContainer">
+        <div className="square"></div>
+        <button className="squareContent" onClick={() => setRoll(rollDice(10))}>
+          10
+        </button>
+      </div>{" "}
     </div>
-  )
+  );
 }
-function DTwelve(props){
+function DTwelve(props) {
   const [roll, setRoll] = useState(null);
-  return(
-    <div class='diceItem'>
-      <button onClick={() => setRoll(rollDice(12))}>12</button>
-      <div class='roll'>{roll}</div>
+  return (
+    <div class="diceItem">
+      <div class="roll">{roll}</div>
+      <div className="shapeContainer">
+        <div className="square"></div>
+        <button className="squareContent" onClick={() => setRoll(rollDice(12))}>
+          12
+        </button>
+      </div>{" "}
     </div>
-  )
+  );
 }
-function DTwenty(props){
+function DTwenty(props) {
   const [roll, setRoll] = useState(null);
-  return(
-    <div class='diceItem'>
-      <span className='hexagon'>&#x2B22;</span>
-      <button id='dTwenty' onClick={() => setRoll(rollDice(20))}>20</button>
-      <div class='roll'>{roll}</div>
+  return (
+    <div className="diceItem">
+      <div className="roll">{roll}</div>
+      <div className="shapeContainer">
+        <div className="hexTriTopContainer">
+          <div className="hexTriTop"></div>
+        </div>
+        <div className="hexRec"></div>
+        <div className="hexTriBottomContainer">
+          <div className="hexTriBottom"></div>
+        </div>
+        <button className="hexContent" onClick={() => setRoll(rollDice(20))}>
+          20
+        </button>
+      </div>
     </div>
-  )
+  );
 }
-function DOneHundred(props){
+function DOneHundred(props) {
   const [roll, setRoll] = useState(null);
-  return(
-    <div class='diceItem'>
-      <button id="dOneHundred" onClick={() => setRoll(rollDice(100))}>100</button>
-      <div class='roll'>{roll}</div>
+  return (
+    <div class="diceItem">
+      <div class="roll">{roll}</div>
+      <div className="shapeContainer">
+        <div className="square"></div>
+        <button
+          className="squareContent"
+          onClick={() => setRoll(rollDice(100))}
+        >
+          100
+        </button>
+      </div>
     </div>
-  )
+  );
 }
-function Totals(props){
-  return(
-    <div id='totals'>
-      display
-    </div>
-  )
+function Totals(props) {
+  return <div id="totals">display</div>;
 }
-function App(){
-  return(
+function App() {
+  return (
     <>
       <Totals />
-      <div id='diceWrapper'>
+      <div id="diceWrapper">
         <DTwenty />
         <DTwelve />
         <DTen />
@@ -90,7 +136,7 @@ function App(){
         <DOneHundred />
       </div>
     </>
-  )
+  );
 }
 
 export default App;
