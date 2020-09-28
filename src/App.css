@@ -39,7 +39,8 @@ button {
   width: 100%;
   height: 15vh;
   font-family: "Lato", sans-serif;
-  font-size: 3rem;
+  font-size: 1.5rem;
+  font-weight: 700;
   background-color: transparent;
   border: none;
   position: absolute;
@@ -48,7 +49,7 @@ button {
   position: relative;
   margin-bottom: 5%;
   width: 60%;
-  max-width: 130px;
+  max-width: 100px;
   max-height: 130px;
   background-color: transparent;
   align-self: center;
@@ -72,9 +73,9 @@ button {
   border-bottom: calc((var(--border) + var(--border)) * 0.866) solid black;
 }
 .triangleContent {
-  margin-top: 15%;
   color: white;
   z-index: 1;
+  align-self: baseline;
 }
 .square {
   position: absolute;
