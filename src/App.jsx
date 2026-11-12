@@ -7,8 +7,8 @@ function rollDice(sides) {
 function DFour(props) {
   const [roll, setRoll] = useState(null);
   return (
-    <div class="diceItem">
-      <div class="roll">{roll}</div>
+    <div className="diceItem">
+      <div className="roll">{roll}</div>
       <div className="shapeContainer">
         <div className="triangle"></div>
         <button
@@ -57,8 +57,8 @@ function DEight(props) {
 function DTen(props) {
   const [roll, setRoll] = useState(null);
   return (
-    <div class="diceItem">
-      <div class="roll">{roll}</div>
+    <div className="diceItem">
+      <div className="roll">{roll}</div>
       <div className="shapeContainer">
         <div className="square"></div>
         <button className="squareContent" onClick={() => setRoll(rollDice(10))}>
@@ -71,8 +71,8 @@ function DTen(props) {
 function DTwelve(props) {
   const [roll, setRoll] = useState(null);
   return (
-    <div class="diceItem">
-      <div class="roll">{roll}</div>
+    <div className="diceItem">
+      <div className="roll">{roll}</div>
       <div className="shapeContainer">
         <div className="square"></div>
         <button className="squareContent" onClick={() => setRoll(rollDice(12))}>
@@ -105,8 +105,8 @@ function DTwenty(props) {
 function DOneHundred(props) {
   const [roll, setRoll] = useState(null);
   return (
-    <div class="diceItem">
-      <div class="roll">{roll}</div>
+    <div className="diceItem">
+      <div className="roll">{roll}</div>
       <div className="shapeContainer">
         <div className="square"></div>
         <button
